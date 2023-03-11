@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HPIXEL</title>
+    <script src="js/app.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="dns-prefetch" href="https//fonts.gstatic.com" />
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div id="app">
+      <div
+        class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-blue"
+      >
+        <div class="my-0 mr-md-auto">
+          <a href="#">
+            <img src="images/logo.png" alt="" />
+          </a>
+        </div>
+        <nav class="my-2 my-md-0 mr-md-3 nav-px">
+          <ul class="nav-habbo">
+            <li class="px">
+              <a class="p-2 text-white icon-home" href="home"></a>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white icon-community dropdown-toggle"
+                href="#"
+                id="community"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Communauté
+              </a>
+              <div class="dropdown-menu" aria-labelledby="community">
+                <a class="dropdown-item" href="staff">Pixel Staff</a>
+                <a class="dropdown-item" href="staff/secondaire"
+                  >Équipe Secondaire</a
+                >
+                <a class="dropdown-item" href="news">Articles</a>
+                <a class="dropdown-item" href="top">Classement</a>
+              </div>
+            </li>
+            <li class="px">
+              <a class="p-2 text-white icon-shop" href="shop">Boutique</a>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white icon-about dropdown-toggle"
+                href="#"
+                id="about"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Les clés du jeu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="about">
+                <a class="dropdown-item" href="about">Qu'est-ce que </a>
+                <a class="dropdown-item" href="about/safety">Sécurité</a>
+                <a class="dropdown-item" href="about/economy">Économie </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="py-4">
+        <div class="container position-relative registration-form">
+          <div class="row">
+            <div class="col-md-5">
+              <h1 class="title-login">M'inscrire</h1>
+              <form method="POST" action="">
+                <div class="form-group">
+                  <label for="username">Nom d'utilisateur</label>
+                  <input
+                    id="username"
+                    type="text"
+                    class="w-75 form-control input-habbo"
+                    name="username"
+                    value=""
+                  />
+                  <span class="invalid-feedback" role="alert">
+                    <strong></strong>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Adresse e-mail</label>
+                  <input
+                    id="email"
+                    type="email"
+                    class="w-75 form-control input-habbo"
+                    name="email"
+                    value=""
+                  />
+                  <p class="pt-2 color-blue">
+                    Vous aurez besoin de l'e-mail pour récupérer votre mot de
+                    passe si vous l'oubliez. Veuillez utiliser un e-mail réel et
+                    accessible pour votre compte
+                  </p>
+                </div>
+
+                <div class="form-group pt-2">
+                  <label for="password">Mot de passe</label>
+                  <input
+                    id="password"
+                    type="password"
+                    class="w-75 form-control input-habbo"
+                    name="password"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="password-confirm"
+                    >Confirme ton mot de passe</label
+                  >
+                  <input
+                    id="password-confirm"
+                    type="password"
+                    class="w-75 form-control input-habbo"
+                    name="password_confirmation"
+                  />
+                </div>
+
+                <div class="form-group mb-0">
+                  <button type="submit" class="btn btn-habbo">
+                    M'inscrire
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="mt-auto footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-4 text-center">
+            <p class="color-blue">Suivre HPIXEL</p>
+            <ul class="social text-center">
+              <li>
+                <a href="https://www.facebook.com/HPIXEL"
+                  ><i class="iconfb"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/HPIXELOfficial"
+                  ><i class="icontw"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/HPIXEL_Official/"
+                  ><i class="iconit"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 col-sm-6 col-7">
+            <a class="link-footer" href="/about/economy">Notre économie</a>
+            <a class="link-footer" href="/about/safety">Sécurité</a>
+            <a class="link-footer" href="/about">Information</a>
+            <p class="footer-copy">
+              ©<br />
+              Tous droits réservés. <br />
+              HPIXEL n'est pas affilié avec, soutenu, sponsorisé, ou
+              spécifiquement approuvé par Sulake Oy ou ses affiliés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

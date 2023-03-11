@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HPIXEL</title>
+    <script src="js/app.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="dns-prefetch" href="https//fonts.gstatic.com" />
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div id="app">
+      <div
+        class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-blue"
+      >
+        <div class="my-0 mr-md-auto">
+          <a href="#">
+            <img src="images/logo.png" alt="" />
+          </a>
+        </div>
+        <nav class="my-2 my-md-0 mr-md-3 nav-px">
+          <ul class="nav-habbo">
+            <li class="px">
+              <a class="p-2 text-white icon-home" href="home"></a>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white icon-community dropdown-toggle"
+                href="#"
+                id="community"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Communauté
+              </a>
+              <div class="dropdown-menu" aria-labelledby="community">
+                <a class="dropdown-item" href="staff">Pixel Staff</a>
+                <a class="dropdown-item" href="staff/secondaire"
+                  >Équipe Secondaire</a
+                >
+                <a class="dropdown-item" href="news">Articles</a>
+                <a class="dropdown-item" href="top">Classement</a>
+              </div>
+            </li>
+            <li class="px">
+              <a class="p-2 text-white icon-shop" href="shop">Boutique</a>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white icon-about dropdown-toggle"
+                href="#"
+                id="about"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Les clés du jeu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="about">
+                <a class="dropdown-item" href="about">Qu'est-ce que </a>
+                <a class="dropdown-item" href="about/safety">Sécurité</a>
+                <a class="dropdown-item" href="about/economy">Économie </a>
+              </div>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white dropdown-toggle-habbo"
+                href="#"
+                id="dropdown01"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <div class="avatar-circle">
+                  <img
+                    src="https://www.habbo.com/habbo-imaging/avatarimage?user=noodlesoup&direction=2&head_direction=2&action=&gesture=nrm&size=m"
+                  />
+                </div>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="URL/settings/account"
+                  >Mes paramètres</a
+                >
+                <a class="dropdown-item" href="URL/logout">Déconnexion</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="py-4">
+        <div class="shop-bar">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="plateforme-shop">
+                  <img
+                    class="avatar-shop"
+                    src="https://www.habbo.com/habbo-imaging/avatarimage?user=noodlesoup&direction=2&head_direction=2&action=&gesture=nrm&size=m"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="welcome-shop pt-4">
+                  Bienvenue sur la boutique de HPIXEL ! Ici tu pourras acheter des
+                  pixels (la monnaie payante du jeu) <br />
+                  pour pouvoir bénéficier des offres proposées.
+                </p>
+                <div class="recap-monnaie">
+                  <span class="monnaie credit mr-1">2000</span>
+                  <span class="monnaie pixel ml-1">2000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container contenu-shop">
+          <h1 class="title-login">Notre boutique</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-box">
+                <h2 class="subtitle-shop">Acheter des pixels</h2>
+              </div>
+            </div>
+
+            <div class="col-md-6 img-shop">
+              <div class="form-box">
+                <form method="post" action="">
+                  <div class="form-group row">
+                    <div class="col-md-6">
+                      <h2 class="subtitle-shop list-style">Le Premium Club</h2>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <button type="submit" class="btn-shop">S'abonner</button>
+                    </div>
+                  </div>
+                </form>
+                <p class="about-shop">
+                  Tu peux t'y abonner pour
+                  <span class="bold">30 pixels</span> et pour une durée de 30
+                  jours. Tu débloqueras des nouvelles fonctionnalités, des
+                  nouvelles commandes et bien plus encore...
+                </p>
+
+                <h2 class="avis-user">Des joueurs ont dit...</h2>
+                <div class="list-avis">
+                  <div class="body-avis">
+                    <div
+                      class="avatar-avis"
+                      style="
+                        background-image: url(https://www.habbo.com/habbo-imaging/avatarimage?figure=ea-1402-0.fa-1201-0.hr-3048-49-60.sh-290-92.lg-270-92.hd-180-28.ch-804-105);
+                      "
+                    ></div>
+                    <div class="p-avis">
+                      <h3>7evenGiven</h3>
+                      <p>
+                        J'ai un tas de crédits grâce à mes victoires aux
+                        animations !
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-avis">
+                  <div class="body-avis">
+                    <div
+                      class="avatar-avis"
+                      style="
+                        background-image: url(https://www.habbo.com/habbo-imaging/avatarimage?figure=ch-235-92.sh-295-92.hr-3163-61.hd-180-1.lg-275-92);
+                      "
+                    ></div>
+                    <div class="p-avis">
+                      <h3>Frank</h3>
+                      <p>Le Premium Club me valorise réellement</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="alert-shop">
+              <p>
+                <img class="align-left" src="images/shop/exclamation.png" />
+                Gain de <span class="bold">5 crédits</span> à chaque animation.
+                <span class="bold">1 crédit</span> par jour, ajout des lingots
+                de platine
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="mt-auto footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-4 text-center">
+            <p class="color-blue">Suivre HPIXEL</p>
+            <ul class="social text-center">
+              <li>
+                <a href="https://www.facebook.com/HPIXEL"
+                  ><i class="iconfb"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/HPIXELOfficial"
+                  ><i class="icontw"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/HPIXEL_Official/"
+                  ><i class="iconit"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 col-sm-6 col-7">
+            <a class="link-footer" href="/about/economy">Notre économie</a>
+            <a class="link-footer" href="/about/safety">Sécurité</a>
+            <a class="link-footer" href="/about">Information</a>
+            <p class="footer-copy">
+              ©<br />
+              Tous droits réservés. <br />
+              HPIXEL n'est pas affilié avec, soutenu, sponsorisé, ou
+              spécifiquement approuvé par Sulake Oy ou ses affiliés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

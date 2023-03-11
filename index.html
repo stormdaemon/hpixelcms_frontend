@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div id="app">
+      <div
+        class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-blue"
+      >
+        <div class="my-0 mr-md-auto">
+          <a href="#">
+            <img src="images/logo.png" alt="" />
+          </a>
+        </div>
+        <nav class="my-2 my-md-0 mr-md-3 nav-px">
+          <ul class="nav-habbo">
+            <li class="px">
+              <a class="p-2 text-white icon-home" href="home"></a>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white icon-community dropdown-toggle"
+                href="#"
+                id="community"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Communauté
+              </a>
+              <div class="dropdown-menu" aria-labelledby="community">
+                <a class="dropdown-item" href="staff">Pixel Staff</a>
+                <a class="dropdown-item" href="staff/secondaire"
+                  >Équipe Secondaire</a
+                >
+                <a class="dropdown-item" href="news">Articles</a>
+                <a class="dropdown-item" href="top">Classement</a>
+              </div>
+            </li>
+            <li class="px">
+              <a class="p-2 text-white icon-shop" href="shop">Boutique</a>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white icon-about dropdown-toggle"
+                href="#"
+                id="about"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Les clés du jeu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="about">
+                <a class="dropdown-item" href="about">Qu'est-ce que </a>
+                <a class="dropdown-item" href="about/safety">Sécurité</a>
+                <a class="dropdown-item" href="about/economy">Économie </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div
+                  class="col-5 col-sm-5 col-md-6 col-lg-5 col-xl-5 text-center"
+                >
+                  <img src="images/login/art_friendstream.png" />
+                </div>
+                <div class="col-7 col-sm-7 col-md-6 col-lg-8 col-xl-7">
+                  <h2>
+                    Découvre
+                    <?= NAME; ?>
+                  </h2>
+                  <p class="color-blue text-login">
+                    Créé un avatar et fais-toi un tas de nouveaux amis.
+                    Inscris-toi et joue gratuitement !
+                  </p>
+                </div>
+                <div
+                  class="col-5 col-sm-5 col-5 col-md-6 col-lg-6 col-xl-7 mt-4"
+                >
+                  <h2 class="text-right">Notre économie</h2>
+                  <p class="color-blue text-login text-right">
+                    Nous avons remis en place une économie stable permettant de
+                    savourer l'experience de jeu
+                  </p>
+                </div>
+                <div
+                  class="col-6 col-sm-7 col-md-6 col-lg-6 col-xl-5 text-center"
+                >
+                  <img src="images/login/creditos.png" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+              <h1 class="title-login">Connexion</h1>
+              <p class="p-login color-blue">
+                Tapez votre nom d'utilisateur et mot de passe
+              </p>
+              <form method="post" action="">
+                <input type="hidden" name="_token" value="" />
+                <input type="hidden" name="_method" value="POST" />
+                <div class="form-group">
+                  <input
+                    id="username"
+                    type="text"
+                    class="form-control input-habbo"
+                    name="username"
+                    value=""
+                    placeholder="Nom d'utilisateur"
+                  />
+                  <span class="invalid-feedback" role="alert">
+                    <strong></strong>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <input
+                    id="password"
+                    type="password"
+                    class="form-control input-habbo"
+                    name="password"
+                    value=""
+                    placeholder="Mot de passe"
+                  />
+                  <span class="invalid-feedback" role="alert">
+                    <strong></strong>
+                  </span>
+                </div>
+                <div class="form-group row mb-4">
+                  <div class="col-6 col-sm-4 col-md-8 col-lg-6 col-xl-5">
+                    <button type="submit" class="btn btn-habbo">
+                      Connexion
+                    </button>
+                  </div>
+                  <div class="col-6 col-sm-6 col-md-12 col-lg-6 col-xl-7">
+                    <h3>Besoin d'aide ?</h3>
+                    <a class="color-blue" href="#">
+                      J'ai oublié mon mot de passe
+                    </a>
+                  </div>
+                </div>
+
+                <div class="form-group mt-4">
+                  <h3>Un endroit étrange avec des personnes incroyables</h3>
+                  <a
+                    href="<?= URL; ?>/register"
+                    class="btn btn-habbo green btn-register"
+                    >M'inscrire</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="background-auth"></div>
+      </main>
+    </div>
+
+    <footer class="mt-auto footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-4 text-center">
+            <p class="color-blue">
+              Suivre
+              <?= @NAME; ?>
+            </p>
+            <ul class="social text-center">
+              <li>
+                <a href="https://www.facebook.com/<?= @FACEBOOK_PAGENAME; ?>"
+                  ><i class="iconfb"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/<?= @TWITTER; ?>"
+                  ><i class="icontw"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/<?= @INSTAGRAM; ?>/"
+                  ><i class="iconit"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 col-sm-6 col-7">
+            <a class="link-footer" href="<?= @URL; ?>/about/economy"
+              >Notre économie</a
+            >
+            <a class="link-footer" href="<?= @URL; ?>/about/safety">Sécurité</a>
+            <a class="link-footer" href="<?= @URL; ?>/about">Information</a>
+            <p class="footer-copy">
+              © 2023 <br />
+              Tous droits réservés. <br />
+              HPIXEL n'est pas affilié avec, soutenu, sponsorisé, ou
+              spécifiquement approuvé par Sulake Oy ou ses affiliés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

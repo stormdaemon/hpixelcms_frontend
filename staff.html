@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HPIXEL</title>
+    <script src="js/app.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="dns-prefetch" href="https//fonts.gstatic.com" />
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div id="app">
+      <div
+        class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-blue"
+      >
+        <div class="my-0 mr-md-auto">
+          <a href="#">
+            <img src="images/logo.png" alt="" />
+          </a>
+        </div>
+        <nav class="my-2 my-md-0 mr-md-3 nav-px">
+          <ul class="nav-habbo">
+            <li class="px">
+              <a class="p-2 text-white icon-home" href="home"></a>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white icon-community dropdown-toggle"
+                href="#"
+                id="community"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Communauté
+              </a>
+              <div class="dropdown-menu" aria-labelledby="community">
+                <a class="dropdown-item" href="staff">Pixel Staff</a>
+                <a class="dropdown-item" href="staff/secondaire"
+                  >Équipe Secondaire</a
+                >
+                <a class="dropdown-item" href="news">Articles</a>
+                <a class="dropdown-item" href="top">Classement</a>
+              </div>
+            </li>
+            <li class="px">
+              <a class="p-2 text-white icon-shop" href="shop">Boutique</a>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white icon-about dropdown-toggle"
+                href="#"
+                id="about"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Les clés du jeu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="about">
+                <a class="dropdown-item" href="about">Qu'est-ce que </a>
+                <a class="dropdown-item" href="about/safety">Sécurité</a>
+                <a class="dropdown-item" href="about/economy">Économie </a>
+              </div>
+            </li>
+            <li class="px">
+              <a
+                class="p-2 text-white dropdown-toggle-habbo"
+                href="#"
+                id="dropdown01"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <div class="avatar-circle">
+                  <img
+                    src="https://www.habbo.com/habbo-imaging/avatarimage?user=noodlesoup&direction=2&head_direction=2&action=&gesture=nrm&size=m"
+                  />
+                </div>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="URL/settings/account"
+                  >Mes paramètres</a
+                >
+                <a class="dropdown-item" href="URL/logout">Déconnexion</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="py-4">
+        <div class="container">
+          <h1 class="title-login">Pixel Staff</h1>
+          <p class="color-blue">
+            Les Pixel Staffs sont indispensables à l'hôtel, chacun dispose d'un
+            rôle différent qui promet d'assurer la modération ou l'animation du
+            serveur. Ils vous assurent à toute heure, une sécurité optimale
+            ainsi que des activités chaleureuses et accueillantes. Ils ont juré
+            de faire respecter les conditions d'utilisation de
+            <?= NAME; ?>
+            sans abus.
+          </p>
+          <div class="row mt-4">
+            <div class="text-center col-6 col-md-3 mb-4">
+              <div class="box-staff">
+                <div style="padding: 1rem">
+                  <div
+                    class="mt-2 mb-2 circle-staff-look"
+                    style="
+                      background-image: url(https://www.habbo.es/habbo-imaging/avatarimage?user=hack&direction=3&head_direction=3&action=wav&gesture=nrm&size=m);
+                    "
+                  ></div>
+                  <span class="username-staff">StormDaemon</span>
+                </div>
+                <div class="rank-staff">Développeur</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="mt-auto footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-4 text-center">
+            <p class="color-blue">Suivre HPIXEL</p>
+            <ul class="social text-center">
+              <li>
+                <a href="https://www.facebook.com/HPIXEL"
+                  ><i class="iconfb"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/HPIXELOfficial"
+                  ><i class="icontw"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/HPIXEL_Official/"
+                  ><i class="iconit"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 col-sm-6 col-7">
+            <a class="link-footer" href="/about/economy">Notre économie</a>
+            <a class="link-footer" href="/about/safety">Sécurité</a>
+            <a class="link-footer" href="/about">Information</a>
+            <p class="footer-copy">
+              ©<br />
+              Tous droits réservés. <br />
+              HPIXEL n'est pas affilié avec, soutenu, sponsorisé, ou
+              spécifiquement approuvé par Sulake Oy ou ses affiliés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
